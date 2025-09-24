@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Applications for Job Posting">
+        <template if:true={applications}>
+            <template for:each={applications} for:item="app">
+                <p key={app.Id}>
+                    {app.Contact__r.Name} - {app.Applicant_Status__c}
+                </p>
+            </template>
+        </template>
+
+        <template if:true={error}>
+            <p class="slds-text-color_error">{error}</p>
+        </template>
+    </lightning-card>
+</template>
