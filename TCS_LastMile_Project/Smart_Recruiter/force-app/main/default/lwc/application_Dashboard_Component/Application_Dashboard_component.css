@@ -1,0 +1,11 @@
+.chart-container {
+    width: 100%;
+    max-width: 400px; /* chart won’t exceed 400px */
+    height: auto;
+    margin: auto; /* center chart */
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
